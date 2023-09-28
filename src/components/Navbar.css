@@ -32,3 +32,10 @@ header a:hover {
   color: #e32c3f;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 480px) {
+  header .site-logo {
+    font-weight: 800;
+    font-size: 20px;
+  }
+}
