@@ -7,7 +7,7 @@ import { MovieInfo } from "./pages/MovieInfo";
 function App() {
   return (
     <div className="App">
-      <Routes>
+      <Routes basename={window.location.pathname || ""}>
         <Route path="/" element={<Home />} />
         <Route path="/results" element={<Results />} />
         <Route path="/results/:id" element={<MovieInfo />} />
