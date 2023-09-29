@@ -50,7 +50,7 @@ export const MovieInfo = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       {film ? (
         <div className="overlap">
           <div class="movie-banner">
