@@ -39,7 +39,7 @@ export const Results = () => {
 
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       {filtered}
     </div>
   );

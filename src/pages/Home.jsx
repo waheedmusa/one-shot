@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 export const Home = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="searchbar-container">
         <h1 className="search-h1">Movie Search</h1>
         <SearchBar />
