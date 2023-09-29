@@ -3,14 +3,15 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Results } from "./pages/Results";
 import { MovieInfo } from "./pages/MovieInfo";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <Routes basename={window.location.pathname || ""}>
+      <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/results" element={<Results />} />
-        <Route path="/results/:id" element={<MovieInfo />} />
+        <Route exact path="/results" element={<Results />} />
+        <Route exact path="/results/:id" element={<MovieInfo />} />
       </Routes>
     </div>
   );
